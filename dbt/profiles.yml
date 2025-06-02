@@ -1,0 +1,11 @@
+assignment_profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth  # ou service-account si tu utilises une clé JSON
+      project: astrafy-assignment
+      dataset: chicago_taxi
+      threads: 1
+      timeout_seconds: 300
+      location: US

@@ -1,0 +1,27 @@
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+crash.log
+
+# Credentials (éviter de push les fichiers de clés)
+credentials/
+*.key
+*.pem
+
+# VSCode
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.env
+.env.*
+
+# dbt
+dbt_packages/
+
+# Système
+.DS_Store
+Thumbs.db
