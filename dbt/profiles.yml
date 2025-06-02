@@ -4,9 +4,8 @@ assignment_profile:
       dataset: chicago_taxi
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: C:\\Users\\Claude\\credentials\\dbt-service-account.json
       location: US
-      method: service-account
+      method: oauth
       priority: interactive
       project: astrafy-assignment
       threads: 1
