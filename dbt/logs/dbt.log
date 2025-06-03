@@ -1,0 +1,1191 @@
+[0m22:07:13.360845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B718A56BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7199D3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B719BDFED0>]}
+
+
+============================== 22:07:13.373096 | 46710ea4-5878-46c0-b55f-1a7fe24f27d3 ==============================
+[0m22:07:13.373096 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:07:13.374427 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init .', 'send_anonymous_usage_stats': 'True'}
+[0m22:07:13.416319 [info ] [MainThread]: Setting up your profile.
+[0m22:19:41.240761 [info ] [MainThread]: Profile assignment_profile written to C:\Users\Claude\assignment\dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:19:41.247579 [debug] [MainThread]: Command `dbt init` succeeded at 22:19:41.247276 after 748.29 seconds
+[0m22:19:41.248430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7355D9E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B719C9D7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B735628160>]}
+[0m22:19:41.249175 [debug] [MainThread]: Flushing usage events
+[0m22:19:41.850059 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:20:29.869024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED6A116BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED6B0A3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED6B2AFED0>]}
+
+
+============================== 22:20:29.884142 | 4d333322-316b-42f0-9621-cd5a9a9cf1ea ==============================
+[0m22:20:29.884142 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:20:29.885130 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:20:29.931594 [info ] [MainThread]: dbt version: 1.9.6
+[0m22:20:29.932340 [info ] [MainThread]: python version: 3.13.3
+[0m22:20:29.933768 [info ] [MainThread]: python path: C:\Users\Claude\AppData\Local\Programs\Python\Python313\python.exe
+[0m22:20:29.935055 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:20:36.336176 [info ] [MainThread]: Using profiles dir at C:\Users\Claude\assignment\dbt
+[0m22:20:36.337250 [info ] [MainThread]: Using profiles.yml file at C:\Users\Claude\assignment\dbt\profiles.yml
+[0m22:20:36.338293 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Claude\assignment\dbt\dbt_project.yml
+[0m22:20:36.338888 [info ] [MainThread]: adapter type: bigquery
+[0m22:20:36.339505 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:20:36.448369 [info ] [MainThread]: Configuration:
+[0m22:20:36.449084 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:20:36.450211 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:20:36.451000 [info ] [MainThread]: Required dependencies:
+[0m22:20:36.451918 [debug] [MainThread]: Executing "git --help"
+[0m22:20:36.568803 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:20:36.569309 [debug] [MainThread]: STDERR: "b''"
+[0m22:20:36.569619 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:20:36.570215 [info ] [MainThread]: Connection:
+[0m22:20:36.571455 [info ] [MainThread]:   method: service-account
+[0m22:20:36.572082 [info ] [MainThread]:   database: astrafy-assignment
+[0m22:20:36.572732 [info ] [MainThread]:   execution_project: astrafy-assignment
+[0m22:20:36.573682 [info ] [MainThread]:   schema: chicago_taxi
+[0m22:20:36.574550 [info ] [MainThread]:   location: US
+[0m22:20:36.575265 [info ] [MainThread]:   priority: interactive
+[0m22:20:36.576012 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:20:36.576542 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:20:36.577054 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:20:36.577551 [info ] [MainThread]:   job_retries: 1
+[0m22:20:36.578060 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:20:36.578612 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:20:36.579399 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:20:36.580422 [info ] [MainThread]:   client_id: None
+[0m22:20:36.582203 [info ] [MainThread]:   token_uri: None
+[0m22:20:36.582711 [info ] [MainThread]:   compute_region: None
+[0m22:20:36.583213 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:20:36.583722 [info ] [MainThread]:   gcs_bucket: None
+[0m22:20:36.584318 [info ] [MainThread]:   dataproc_batch: None
+[0m22:20:36.585106 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m22:20:37.731189 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:20:37.731623 [debug] [MainThread]: On debug: select 1 as id
+[0m22:20:37.731971 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:20:37.732469 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\Claude\\credentials\\dbt-service-account.json''
+[0m22:20:37.732836 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m22:20:37.733166 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\Users\\Claude\\credentials\\dbt-service-account.json'
+[0m22:20:37.733493 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:20:37.734064 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:20:37.735381 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:20:37.737893 [debug] [MainThread]: Command `dbt debug` failed at 22:20:37.737714 after 9.51 seconds
+[0m22:20:37.738328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED08080050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED06E8B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ED06DDC050>]}
+[0m22:20:37.738725 [debug] [MainThread]: Flushing usage events
+[0m22:20:38.199989 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:23:21.037963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285A5276BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285A61F3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285A63FFED0>]}
+
+
+============================== 22:23:21.043414 | 902fd9d2-d902-4628-8dfd-af8a788a2ad8 ==============================
+[0m22:23:21.043414 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:23:21.044135 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:23:21.073707 [info ] [MainThread]: dbt version: 1.9.6
+[0m22:23:21.074461 [info ] [MainThread]: python version: 3.13.3
+[0m22:23:21.074915 [info ] [MainThread]: python path: C:\Users\Claude\AppData\Local\Programs\Python\Python313\python.exe
+[0m22:23:21.075436 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:23:25.894777 [info ] [MainThread]: Using profiles dir at C:\Users\Claude\assignment\dbt
+[0m22:23:25.895453 [info ] [MainThread]: Using profiles.yml file at C:\Users\Claude\assignment\dbt\profiles.yml
+[0m22:23:25.895906 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Claude\assignment\dbt\dbt_project.yml
+[0m22:23:25.896361 [info ] [MainThread]: adapter type: bigquery
+[0m22:23:25.896759 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:23:25.996091 [info ] [MainThread]: Configuration:
+[0m22:23:25.996927 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:23:25.997502 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:23:25.998011 [info ] [MainThread]: Required dependencies:
+[0m22:23:25.998636 [debug] [MainThread]: Executing "git --help"
+[0m22:23:26.067121 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:23:26.067583 [debug] [MainThread]: STDERR: "b''"
+[0m22:23:26.067907 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:23:26.068420 [info ] [MainThread]: Connection:
+[0m22:23:26.068912 [info ] [MainThread]:   method: service-account
+[0m22:23:26.069383 [info ] [MainThread]:   database: astrafy-assignment
+[0m22:23:26.069929 [info ] [MainThread]:   execution_project: astrafy-assignment
+[0m22:23:26.070445 [info ] [MainThread]:   schema: chicago_taxi
+[0m22:23:26.071147 [info ] [MainThread]:   location: US
+[0m22:23:26.071888 [info ] [MainThread]:   priority: interactive
+[0m22:23:26.072657 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:23:26.073268 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:23:26.073950 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:23:26.074637 [info ] [MainThread]:   job_retries: 1
+[0m22:23:26.075232 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:23:26.075823 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:23:26.076351 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:23:26.076887 [info ] [MainThread]:   client_id: None
+[0m22:23:26.078781 [info ] [MainThread]:   token_uri: None
+[0m22:23:26.079434 [info ] [MainThread]:   compute_region: None
+[0m22:23:26.080063 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:23:26.080655 [info ] [MainThread]:   gcs_bucket: None
+[0m22:23:26.081257 [info ] [MainThread]:   dataproc_batch: None
+[0m22:23:26.082172 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m22:23:27.068927 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:23:27.069368 [debug] [MainThread]: On debug: select 1 as id
+[0m22:23:27.069739 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:23:27.070230 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\\\Users\\\\Claude\\\\credentials\\\\dbt-service-account.json''
+[0m22:23:27.070607 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m22:23:27.070938 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\\\Users\\\\Claude\\\\credentials\\\\dbt-service-account.json'
+[0m22:23:27.071266 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:23:27.071850 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:23:27.072996 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:23:27.075495 [debug] [MainThread]: Command `dbt debug` failed at 22:23:27.075322 after 6.35 seconds
+[0m22:23:27.075930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285C30D8050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285C1ED7770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285C1E2C050>]}
+[0m22:23:27.076350 [debug] [MainThread]: Flushing usage events
+[0m22:23:27.508618 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:26:31.419079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209D6006BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209D6F83C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209D718FED0>]}
+
+
+============================== 22:26:31.424351 | 43730b36-89ce-408a-8ff5-228dff068807 ==============================
+[0m22:26:31.424351 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:26:31.425156 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:26:31.456444 [info ] [MainThread]: dbt version: 1.9.6
+[0m22:26:31.457061 [info ] [MainThread]: python version: 3.13.3
+[0m22:26:31.457757 [info ] [MainThread]: python path: C:\Users\Claude\AppData\Local\Programs\Python\Python313\python.exe
+[0m22:26:31.458332 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:26:35.850167 [info ] [MainThread]: Using profiles dir at C:\Users\Claude\assignment\dbt
+[0m22:26:35.850812 [info ] [MainThread]: Using profiles.yml file at C:\Users\Claude\assignment\dbt\profiles.yml
+[0m22:26:35.851928 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Claude\assignment\dbt\dbt_project.yml
+[0m22:26:35.852519 [info ] [MainThread]: adapter type: bigquery
+[0m22:26:35.853311 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:26:35.957939 [info ] [MainThread]: Configuration:
+[0m22:26:35.958960 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:26:35.960100 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:26:35.960796 [info ] [MainThread]: Required dependencies:
+[0m22:26:35.961700 [debug] [MainThread]: Executing "git --help"
+[0m22:26:36.036305 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:26:36.036929 [debug] [MainThread]: STDERR: "b''"
+[0m22:26:36.037303 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:26:36.037960 [info ] [MainThread]: Connection:
+[0m22:26:36.039301 [info ] [MainThread]:   method: service-account
+[0m22:26:36.040059 [info ] [MainThread]:   database: astrafy-assignment
+[0m22:26:36.041479 [info ] [MainThread]:   execution_project: astrafy-assignment
+[0m22:26:36.042506 [info ] [MainThread]:   schema: chicago_taxi
+[0m22:26:36.043174 [info ] [MainThread]:   location: US
+[0m22:26:36.043904 [info ] [MainThread]:   priority: interactive
+[0m22:26:36.044549 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:26:36.045170 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:26:36.045799 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:26:36.046371 [info ] [MainThread]:   job_retries: 1
+[0m22:26:36.046959 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:26:36.047541 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:26:36.048123 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:26:36.048681 [info ] [MainThread]:   client_id: None
+[0m22:26:36.049427 [info ] [MainThread]:   token_uri: None
+[0m22:26:36.050025 [info ] [MainThread]:   compute_region: None
+[0m22:26:36.050640 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:26:36.051176 [info ] [MainThread]:   gcs_bucket: None
+[0m22:26:36.051766 [info ] [MainThread]:   dataproc_batch: None
+[0m22:26:36.052666 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m22:26:37.194879 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:26:37.195590 [debug] [MainThread]: On debug: select 1 as id
+[0m22:26:37.195975 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:26:37.196579 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\\\Users\\\\Claude\\\\credentials\\\\dbt-service-account.json''
+[0m22:26:37.196973 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m22:26:37.197296 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\\\Users\\\\Claude\\\\credentials\\\\dbt-service-account.json'
+[0m22:26:37.197620 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:26:37.198193 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:26:37.198738 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:26:37.200527 [debug] [MainThread]: Command `dbt debug` failed at 22:26:37.200388 after 5.97 seconds
+[0m22:26:37.200957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209F3E64050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209F2C67770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209F2BBC050>]}
+[0m22:26:37.201358 [debug] [MainThread]: Flushing usage events
+[0m22:26:37.650589 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:40:14.828800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F205926BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2068B3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F206ABFED0>]}
+
+
+============================== 22:40:14.835272 | 27fa62e9-ce7a-4777-91f7-4f6b5c4a293e ==============================
+[0m22:40:14.835272 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:40:14.836215 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:40:14.871470 [info ] [MainThread]: dbt version: 1.9.6
+[0m22:40:14.872211 [info ] [MainThread]: python version: 3.13.3
+[0m22:40:14.873393 [info ] [MainThread]: python path: C:\Users\Claude\AppData\Local\Programs\Python\Python313\python.exe
+[0m22:40:14.874735 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:40:19.965678 [info ] [MainThread]: Using profiles dir at C:\Users\Claude\assignment\dbt
+[0m22:40:19.966423 [info ] [MainThread]: Using profiles.yml file at C:\Users\Claude\assignment\dbt\profiles.yml
+[0m22:40:19.967570 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Claude\assignment\dbt\dbt_project.yml
+[0m22:40:19.968186 [info ] [MainThread]: adapter type: bigquery
+[0m22:40:19.968789 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:40:20.077381 [info ] [MainThread]: Configuration:
+[0m22:40:20.078204 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:40:20.080307 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:40:20.081503 [info ] [MainThread]: Required dependencies:
+[0m22:40:20.082180 [debug] [MainThread]: Executing "git --help"
+[0m22:40:20.159660 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:40:20.160293 [debug] [MainThread]: STDERR: "b''"
+[0m22:40:20.160671 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:40:20.161333 [info ] [MainThread]: Connection:
+[0m22:40:20.163637 [info ] [MainThread]:   method: service-account
+[0m22:40:20.164522 [info ] [MainThread]:   database: astrafy-assignment
+[0m22:40:20.165228 [info ] [MainThread]:   execution_project: astrafy-assignment
+[0m22:40:20.166027 [info ] [MainThread]:   schema: chicago_taxi
+[0m22:40:20.166628 [info ] [MainThread]:   location: US
+[0m22:40:20.167249 [info ] [MainThread]:   priority: interactive
+[0m22:40:20.167857 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:40:20.168492 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:40:20.169111 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:40:20.169620 [info ] [MainThread]:   job_retries: 1
+[0m22:40:20.170108 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:40:20.170633 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:40:20.171158 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:40:20.171670 [info ] [MainThread]:   client_id: None
+[0m22:40:20.172187 [info ] [MainThread]:   token_uri: None
+[0m22:40:20.172688 [info ] [MainThread]:   compute_region: None
+[0m22:40:20.173229 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:40:20.173691 [info ] [MainThread]:   gcs_bucket: None
+[0m22:40:20.174186 [info ] [MainThread]:   dataproc_batch: None
+[0m22:40:20.174975 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m22:40:21.156804 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:40:21.157229 [debug] [MainThread]: On debug: select 1 as id
+[0m22:40:21.157573 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:40:21.158047 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\\\Users\\\\Claude\\\\credentials\\\\dbt-service-account.json''
+[0m22:40:21.158550 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m22:40:21.158924 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\\\Users\\\\Claude\\\\credentials\\\\dbt-service-account.json'
+[0m22:40:21.159360 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:40:21.160008 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:40:21.161443 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:40:21.165072 [debug] [MainThread]: Command `dbt debug` failed at 22:40:21.164907 after 6.63 seconds
+[0m22:40:21.165527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2237A8050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2225A7770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2224FC050>]}
+[0m22:40:21.165935 [debug] [MainThread]: Flushing usage events
+[0m22:40:21.594731 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:13.079181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C711D6BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C72153C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C7235FED0>]}
+
+
+============================== 22:42:13.094931 | baba9e0f-70e2-45a9-b8db-d6e3ca8b9950 ==============================
+[0m22:42:13.094931 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:42:13.095965 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init .', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:13.147205 [info ] [MainThread]: Setting up your profile.
+[0m22:43:15.221593 [info ] [MainThread]: Profile assignment_profile written to C:\Users\Claude\assignment\dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:43:15.225412 [debug] [MainThread]: Command `dbt init` succeeded at 22:43:15.225178 after 62.55 seconds
+[0m22:43:15.226113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0DFC9F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C7241D7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0E018160>]}
+[0m22:43:15.226739 [debug] [MainThread]: Flushing usage events
+[0m22:43:15.692198 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:43:32.981890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B547596BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B548513C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B54871FED0>]}
+
+
+============================== 22:43:32.987455 | 07388e79-930d-4a1f-bb00-c5b3bdb96dc2 ==============================
+[0m22:43:32.987455 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:43:32.988273 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:43:33.030769 [info ] [MainThread]: dbt version: 1.9.6
+[0m22:43:33.031394 [info ] [MainThread]: python version: 3.13.3
+[0m22:43:33.032476 [info ] [MainThread]: python path: C:\Users\Claude\AppData\Local\Programs\Python\Python313\python.exe
+[0m22:43:33.033049 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:43:38.922585 [info ] [MainThread]: Using profiles dir at C:\Users\Claude\assignment\dbt
+[0m22:43:38.923471 [info ] [MainThread]: Using profiles.yml file at C:\Users\Claude\assignment\dbt\profiles.yml
+[0m22:43:38.924816 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Claude\assignment\dbt\dbt_project.yml
+[0m22:43:38.925978 [info ] [MainThread]: adapter type: bigquery
+[0m22:43:38.926985 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:43:39.055821 [info ] [MainThread]: Configuration:
+[0m22:43:39.056764 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:43:39.058165 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:43:39.059558 [info ] [MainThread]: Required dependencies:
+[0m22:43:39.060476 [debug] [MainThread]: Executing "git --help"
+[0m22:43:39.306163 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:43:39.306774 [debug] [MainThread]: STDERR: "b''"
+[0m22:43:39.307267 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:43:39.307943 [info ] [MainThread]: Connection:
+[0m22:43:39.309388 [info ] [MainThread]:   method: oauth
+[0m22:43:39.310714 [info ] [MainThread]:   database: astrafy-assignment
+[0m22:43:39.312132 [info ] [MainThread]:   execution_project: astrafy-assignment
+[0m22:43:39.329535 [info ] [MainThread]:   schema: chicago_taxi
+[0m22:43:39.330357 [info ] [MainThread]:   location: US
+[0m22:43:39.331221 [info ] [MainThread]:   priority: interactive
+[0m22:43:39.332966 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:43:39.333699 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:43:39.355109 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:43:39.357179 [info ] [MainThread]:   job_retries: 1
+[0m22:43:39.357928 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:43:39.358724 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:43:39.359753 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:43:39.360547 [info ] [MainThread]:   client_id: None
+[0m22:43:39.361975 [info ] [MainThread]:   token_uri: None
+[0m22:43:39.362786 [info ] [MainThread]:   compute_region: None
+[0m22:43:39.363600 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:43:39.364226 [info ] [MainThread]:   gcs_bucket: None
+[0m22:43:39.364822 [info ] [MainThread]:   dataproc_batch: None
+[0m22:43:39.365771 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m22:43:40.448620 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:43:40.449112 [debug] [MainThread]: On debug: select 1 as id
+[0m22:43:40.449478 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:43:43.803863 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:c0daa31d-c873-417b-88c8-7d86650b43a7&page=queryresults
+[0m22:43:51.751669 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:43:51.752894 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:43:51.756478 [debug] [MainThread]: Command `dbt debug` succeeded at 22:43:51.756153 after 19.05 seconds
+[0m22:43:51.757144 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:43:51.758062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5653FCE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B56423ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B56414C380>]}
+[0m22:43:51.758547 [debug] [MainThread]: Flushing usage events
+[0m22:43:52.155176 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:43.122751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201B3E2ABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201B4DA3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201B4FAFED0>]}
+
+
+============================== 17:06:43.134868 | 75609b4c-6ff6-40a4-83b0-55d94dcc9877 ==============================
+[0m17:06:43.134868 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:06:43.135821 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m17:06:43.165075 [info ] [MainThread]: dbt version: 1.9.6
+[0m17:06:43.165678 [info ] [MainThread]: python version: 3.13.3
+[0m17:06:43.166179 [info ] [MainThread]: python path: C:\Users\Claude\AppData\Local\Programs\Python\Python313\python.exe
+[0m17:06:43.166684 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m17:06:55.493501 [info ] [MainThread]: Using profiles dir at C:\Users\Claude\assignment\dbt
+[0m17:06:55.494345 [info ] [MainThread]: Using profiles.yml file at C:\Users\Claude\assignment\dbt\profiles.yml
+[0m17:06:55.495556 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Claude\assignment\dbt\dbt_project.yml
+[0m17:06:55.496346 [info ] [MainThread]: adapter type: bigquery
+[0m17:06:55.497132 [info ] [MainThread]: adapter version: 1.9.2
+[0m17:06:55.596912 [info ] [MainThread]: Configuration:
+[0m17:06:55.597692 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:06:55.598944 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:06:55.599637 [info ] [MainThread]: Required dependencies:
+[0m17:06:55.600499 [debug] [MainThread]: Executing "git --help"
+[0m17:06:55.740420 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:06:55.740989 [debug] [MainThread]: STDERR: "b''"
+[0m17:06:55.741372 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:06:55.742081 [info ] [MainThread]: Connection:
+[0m17:06:55.743390 [info ] [MainThread]:   method: oauth
+[0m17:06:55.744040 [info ] [MainThread]:   database: astrafy-assignment
+[0m17:06:55.744916 [info ] [MainThread]:   execution_project: astrafy-assignment
+[0m17:06:55.745648 [info ] [MainThread]:   schema: chicago_taxi
+[0m17:06:55.746511 [info ] [MainThread]:   location: US
+[0m17:06:55.747219 [info ] [MainThread]:   priority: interactive
+[0m17:06:55.747848 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:06:55.748439 [info ] [MainThread]:   impersonate_service_account: None
+[0m17:06:55.749040 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:06:55.749598 [info ] [MainThread]:   job_retries: 1
+[0m17:06:55.750159 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:06:55.750714 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:06:55.751352 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:06:55.751945 [info ] [MainThread]:   client_id: None
+[0m17:06:55.752528 [info ] [MainThread]:   token_uri: None
+[0m17:06:55.753088 [info ] [MainThread]:   compute_region: None
+[0m17:06:55.753704 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m17:06:55.754248 [info ] [MainThread]:   gcs_bucket: None
+[0m17:06:55.754817 [info ] [MainThread]:   dataproc_batch: None
+[0m17:06:55.755718 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:06:57.321153 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:06:57.321622 [debug] [MainThread]: On debug: select 1 as id
+[0m17:06:57.321999 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:06:58.588236 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:277c3339-f7f3-4c79-913d-9b2b1eb289dd&page=queryresults
+[0m17:07:02.920527 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:07:02.922935 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:07:02.930653 [debug] [MainThread]: Command `dbt debug` succeeded at 17:07:02.930075 after 20.03 seconds
+[0m17:07:02.931956 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:07:02.932336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D1C98FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D0ADED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D09EC380>]}
+[0m17:07:02.932747 [debug] [MainThread]: Flushing usage events
+[0m17:07:03.366343 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:12:30.989992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025699F76BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002569AEF3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002569B0FFED0>]}
+
+
+============================== 17:12:30.996294 | 43e1498f-786c-40b8-aca6-68b451250ab1 ==============================
+[0m17:12:30.996294 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:12:30.997225 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:12:36.638240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002569A61D5B0>]}
+[0m17:12:36.726782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B6A2D6A0>]}
+[0m17:12:36.727648 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:12:37.911370 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m17:12:37.912734 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:12:37.913420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B6A94E50>]}
+[0m17:12:41.539318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002569AC38500>]}
+[0m17:12:41.612051 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:12:41.812398 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:12:41.861848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B7FDF310>]}
+[0m17:12:41.862504 [info ] [MainThread]: Found 1 model, 493 macros
+[0m17:12:41.863189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B806B520>]}
+[0m17:12:41.867558 [info ] [MainThread]: 
+[0m17:12:41.868294 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:12:41.868979 [info ] [MainThread]: 
+[0m17:12:41.869913 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:12:41.871083 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment'
+[0m17:12:41.871594 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:12:42.367813 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment_chicago_taxi'
+[0m17:12:42.368352 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:12:42.712532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B80344D0>]}
+[0m17:12:42.713508 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:12:42.809957 [debug] [Thread-1 (]: Began running node model.assignment.filtered_trips
+[0m17:12:42.810573 [info ] [Thread-1 (]: 1 of 1 START sql view model chicago_taxi.filtered_trips ........................ [RUN]
+[0m17:12:42.811530 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.assignment.filtered_trips'
+[0m17:12:42.812008 [debug] [Thread-1 (]: Began compiling node model.assignment.filtered_trips
+[0m17:12:42.818403 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.filtered_trips"
+[0m17:12:42.821379 [debug] [Thread-1 (]: Began executing node model.assignment.filtered_trips
+[0m17:12:42.843094 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:12:43.006690 [debug] [Thread-1 (]: Compilation Error in model filtered_trips (models\filtered_trips.sql)
+  Trying to create view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`, but it currently exists as a table. Either drop `astrafy-assignment`.`chicago_taxi`.`filtered_trips` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model filtered_trips (models\filtered_trips.sql)
+[0m17:12:43.027463 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '43e1498f-786c-40b8-aca6-68b451250ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B813C890>]}
+[0m17:12:43.029198 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model chicago_taxi.filtered_trips ............... [[31mERROR[0m in 0.20s]
+[0m17:12:43.031361 [debug] [Thread-1 (]: Finished running node model.assignment.filtered_trips
+[0m17:12:43.033895 [debug] [Thread-4 (]: Marking all children of 'model.assignment.filtered_trips' to be skipped because of status 'error'.  Reason: Compilation Error in model filtered_trips (models\filtered_trips.sql)
+  Trying to create view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`, but it currently exists as a table. Either drop `astrafy-assignment`.`chicago_taxi`.`filtered_trips` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model filtered_trips (models\filtered_trips.sql).
+[0m17:12:43.037623 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:12:43.039064 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:12:43.039929 [debug] [MainThread]: Connection 'list_astrafy-assignment' was properly closed.
+[0m17:12:43.040720 [debug] [MainThread]: Connection 'list_astrafy-assignment_chicago_taxi' was properly closed.
+[0m17:12:43.041846 [debug] [MainThread]: Connection 'model.assignment.filtered_trips' was properly closed.
+[0m17:12:43.043328 [info ] [MainThread]: 
+[0m17:12:43.044458 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.17 seconds (1.17s).
+[0m17:12:43.046627 [debug] [MainThread]: Command end result
+[0m17:12:43.133065 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:12:43.136433 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:12:43.144029 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Claude\assignment\dbt\target\run_results.json
+[0m17:12:43.144467 [info ] [MainThread]: 
+[0m17:12:43.145259 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:12:43.146266 [info ] [MainThread]: 
+[0m17:12:43.150043 [error] [MainThread]:   Compilation Error in model filtered_trips (models\filtered_trips.sql)
+  Trying to create view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`, but it currently exists as a table. Either drop `astrafy-assignment`.`chicago_taxi`.`filtered_trips` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model filtered_trips (models\filtered_trips.sql)
+[0m17:12:43.151140 [info ] [MainThread]: 
+[0m17:12:43.155176 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:12:43.160774 [debug] [MainThread]: Command `dbt run` failed at 17:12:43.160289 after 12.50 seconds
+[0m17:12:43.161949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B81579D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B802D640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256B6F65450>]}
+[0m17:12:43.163123 [debug] [MainThread]: Flushing usage events
+[0m17:12:43.589128 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:15:17.748436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B455F9ABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B456F13C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B45711FED0>]}
+
+
+============================== 17:15:17.753526 | e692c13e-79ce-40b1-960d-b8a8c1d25ae6 ==============================
+[0m17:15:17.753526 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:15:17.754255 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --full-refresh', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:15:22.154204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e692c13e-79ce-40b1-960d-b8a8c1d25ae6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B4566295B0>]}
+[0m17:15:22.215512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e692c13e-79ce-40b1-960d-b8a8c1d25ae6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B472A9D6A0>]}
+[0m17:15:22.216267 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:15:23.163037 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m17:15:23.499158 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:15:23.499626 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:15:23.531343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e692c13e-79ce-40b1-960d-b8a8c1d25ae6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B472B05750>]}
+[0m17:15:23.603347 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:15:23.607457 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:15:23.652270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e692c13e-79ce-40b1-960d-b8a8c1d25ae6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B472B2B980>]}
+[0m17:15:23.652938 [info ] [MainThread]: Found 1 model, 493 macros
+[0m17:15:23.653652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e692c13e-79ce-40b1-960d-b8a8c1d25ae6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B472B66A50>]}
+[0m17:15:23.657575 [info ] [MainThread]: 
+[0m17:15:23.658268 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:15:23.658969 [info ] [MainThread]: 
+[0m17:15:23.659923 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:15:23.661330 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment'
+[0m17:15:23.661872 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:15:24.207584 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment_chicago_taxi'
+[0m17:15:24.208277 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:15:24.511780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e692c13e-79ce-40b1-960d-b8a8c1d25ae6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B47401FC70>]}
+[0m17:15:24.512900 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:15:24.522156 [debug] [Thread-1 (]: Began running node model.assignment.filtered_trips
+[0m17:15:24.523376 [info ] [Thread-1 (]: 1 of 1 START sql view model chicago_taxi.filtered_trips ........................ [RUN]
+[0m17:15:24.524921 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.assignment.filtered_trips'
+[0m17:15:24.525769 [debug] [Thread-1 (]: Began compiling node model.assignment.filtered_trips
+[0m17:15:24.541576 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.filtered_trips"
+[0m17:15:24.543486 [debug] [Thread-1 (]: Began executing node model.assignment.filtered_trips
+[0m17:15:24.569481 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:15:24.879462 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.filtered_trips"
+[0m17:15:24.882486 [debug] [Thread-1 (]: On model.assignment.filtered_trips: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.filtered_trips"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`
+  OPTIONS()
+  as with filtered_trips as (
+    select *
+    from `astrafy-assignment.chicago_taxi.filtered_trips`
+),
+
+weather_prepped as (
+    select
+        parse_date('%Y-%m-%d', DATE) as weather_date,
+        (MAX_TEMPERATURE_C + MIN_TEMPERATURE_C) / 2 as avg_temp,
+        case when PRECIP_TOTAL_DAY_MM > 0 then true else false end as has_precipitation
+    from `astrafy-assignment.chicago_taxi.weather`
+)
+
+select
+    t.*,
+    w.avg_temp,
+    w.has_precipitation
+from filtered_trips t
+left join weather_prepped w
+    on date(t.trip_start_timestamp) = w.weather_date;
+
+
+[0m17:15:25.367368 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:b630d816-ef1f-4a59-b13a-fc55ec9ca8df&page=queryresults
+[0m17:15:25.369324 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:b630d816-ef1f-4a59-b13a-fc55ec9ca8df&page=queryresults
+[0m17:15:25.490166 [debug] [Thread-1 (]: Database Error in model filtered_trips (models\filtered_trips.sql)
+  Not found: Table astrafy-assignment:chicago_taxi.filtered_trips was not found in location US
+  compiled code at target\run\assignment\models\filtered_trips.sql
+[0m17:15:25.492608 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e692c13e-79ce-40b1-960d-b8a8c1d25ae6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B474039E50>]}
+[0m17:15:25.493348 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model chicago_taxi.filtered_trips ............... [[31mERROR[0m in 0.97s]
+[0m17:15:25.494295 [debug] [Thread-1 (]: Finished running node model.assignment.filtered_trips
+[0m17:15:25.494968 [debug] [Thread-4 (]: Marking all children of 'model.assignment.filtered_trips' to be skipped because of status 'error'.  Reason: Database Error in model filtered_trips (models\filtered_trips.sql)
+  Not found: Table astrafy-assignment:chicago_taxi.filtered_trips was not found in location US
+  compiled code at target\run\assignment\models\filtered_trips.sql.
+[0m17:15:25.497026 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:15:25.497612 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:15:25.498005 [debug] [MainThread]: Connection 'list_astrafy-assignment' was properly closed.
+[0m17:15:25.498306 [debug] [MainThread]: Connection 'list_astrafy-assignment_chicago_taxi' was properly closed.
+[0m17:15:25.498598 [debug] [MainThread]: Connection 'model.assignment.filtered_trips' was properly closed.
+[0m17:15:25.499005 [info ] [MainThread]: 
+[0m17:15:25.499529 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.84 seconds (1.84s).
+[0m17:15:25.500480 [debug] [MainThread]: Command end result
+[0m17:15:25.537848 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:15:25.540631 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:15:25.546923 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Claude\assignment\dbt\target\run_results.json
+[0m17:15:25.547468 [info ] [MainThread]: 
+[0m17:15:25.548304 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:15:25.549450 [info ] [MainThread]: 
+[0m17:15:25.550328 [error] [MainThread]:   Database Error in model filtered_trips (models\filtered_trips.sql)
+  Not found: Table astrafy-assignment:chicago_taxi.filtered_trips was not found in location US
+  compiled code at target\run\assignment\models\filtered_trips.sql
+[0m17:15:25.551436 [info ] [MainThread]: 
+[0m17:15:25.552137 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:15:25.554415 [debug] [MainThread]: Command `dbt run` failed at 17:15:25.554244 after 8.15 seconds
+[0m17:15:25.554849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B474065910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B474075310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B474074FF0>]}
+[0m17:15:25.555223 [debug] [MainThread]: Flushing usage events
+[0m17:15:25.996131 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:34:13.180065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5616EABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C562663C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C56286FED0>]}
+
+
+============================== 17:34:13.186263 | 8317b192-62d8-48b0-b1a5-631eaddf8bd9 ==============================
+[0m17:34:13.186263 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:34:13.186985 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:34:17.662686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8317b192-62d8-48b0-b1a5-631eaddf8bd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C561D8D5B0>]}
+[0m17:34:17.725819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8317b192-62d8-48b0-b1a5-631eaddf8bd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57E19D6A0>]}
+[0m17:34:17.726628 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:34:18.650521 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m17:34:18.894472 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 2 files added, 0 files changed.
+[0m17:34:18.894960 [debug] [MainThread]: Partial parsing: added file: assignment://models\join_model.sql
+[0m17:34:18.895336 [debug] [MainThread]: Partial parsing: added file: assignment://models\filtered_trip.sql
+[0m17:34:18.895625 [debug] [MainThread]: Partial parsing: deleted file: assignment://models\filtered_trips.sql
+[0m17:34:19.133888 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.assignment.join_model' (models\join_model.sql) depends on a node named 'filtered_trips' which was not found
+[0m17:34:19.136472 [debug] [MainThread]: Command `dbt run` failed at 17:34:19.136274 after 6.22 seconds
+[0m17:34:19.136976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57E205A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57E206E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57F74F3E0>]}
+[0m17:34:19.137541 [debug] [MainThread]: Flushing usage events
+[0m17:34:19.551615 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:35:51.995722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B97BC3ABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B97CBB3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B97CDBFED0>]}
+
+
+============================== 17:35:52.001549 | 9583472e-6a2a-4b34-b42a-0b138ece942c ==============================
+[0m17:35:52.001549 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:35:52.002392 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:35:57.032631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B97C2DD5B0>]}
+[0m17:35:57.108595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B91879D6A0>]}
+[0m17:35:57.109699 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:35:58.132997 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m17:35:58.320101 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m17:35:58.320602 [debug] [MainThread]: Partial parsing: added file: assignment://models\join_model.sql
+[0m17:35:58.321008 [debug] [MainThread]: Partial parsing: updated file: assignment://models\filtered_trips.sql
+[0m17:35:58.587604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B918805650>]}
+[0m17:35:58.646479 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:35:58.649634 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:35:58.692202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B91882B980>]}
+[0m17:35:58.692761 [info ] [MainThread]: Found 2 models, 493 macros
+[0m17:35:58.693580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B919DEF5B0>]}
+[0m17:35:58.695668 [info ] [MainThread]: 
+[0m17:35:58.696597 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:35:58.697700 [info ] [MainThread]: 
+[0m17:35:58.699172 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:35:58.704023 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment'
+[0m17:35:58.704585 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:35:59.249823 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment_chicago_taxi'
+[0m17:35:59.251389 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:35:59.584443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B919E78050>]}
+[0m17:35:59.584992 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:35:59.589936 [debug] [Thread-1 (]: Began running node model.assignment.filtered_trips
+[0m17:35:59.590503 [info ] [Thread-1 (]: 1 of 2 START sql view model chicago_taxi.filtered_trips ........................ [RUN]
+[0m17:35:59.591311 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.assignment.filtered_trips'
+[0m17:35:59.591704 [debug] [Thread-1 (]: Began compiling node model.assignment.filtered_trips
+[0m17:35:59.598054 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.filtered_trips"
+[0m17:35:59.599423 [debug] [Thread-1 (]: Began executing node model.assignment.filtered_trips
+[0m17:35:59.629888 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.filtered_trips"
+[0m17:35:59.631274 [debug] [Thread-1 (]: On model.assignment.filtered_trips: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.filtered_trips"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`
+  OPTIONS()
+  as -- models/filtered_trips.sql
+
+select *
+from `astrafy-assignment.chicago_taxi.taxi_trips`
+where trip_start_timestamp between '2023-06-01' and '2023-12-31';
+
+
+[0m17:35:59.631789 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:36:00.413878 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:ce37a111-acd8-4282-b57a-9d94de9cfdd3&page=queryresults
+[0m17:36:01.110734 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B919E33E90>]}
+[0m17:36:01.111598 [info ] [Thread-1 (]: 1 of 2 OK created sql view model chicago_taxi.filtered_trips ................... [[32mCREATE VIEW (0 processed)[0m in 1.52s]
+[0m17:36:01.112959 [debug] [Thread-1 (]: Finished running node model.assignment.filtered_trips
+[0m17:36:01.114268 [debug] [Thread-1 (]: Began running node model.assignment.join_model
+[0m17:36:01.115673 [info ] [Thread-1 (]: 2 of 2 START sql view model chicago_taxi.join_model ............................ [RUN]
+[0m17:36:01.116611 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.assignment.filtered_trips, now model.assignment.join_model)
+[0m17:36:01.117229 [debug] [Thread-1 (]: Began compiling node model.assignment.join_model
+[0m17:36:01.120663 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.join_model"
+[0m17:36:01.122230 [debug] [Thread-1 (]: Began executing node model.assignment.join_model
+[0m17:36:01.126137 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.join_model"
+[0m17:36:01.127835 [debug] [Thread-1 (]: On model.assignment.join_model: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.join_model"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`join_model`
+  OPTIONS()
+  as -- models/enriched_trips.sql
+
+with weather_prepped as (
+    select
+        parse_date('%Y-%m-%d', DATE) as weather_date,
+        (MAX_TEMPERATURE_C + MIN_TEMPERATURE_C) / 2 as avg_temp,
+        case when PRECIP_TOTAL_DAY_MM > 0 then true else false end as has_precipitation
+    from `astrafy-assignment.chicago_taxi.weather`
+)
+
+select
+    t.*,
+    w.avg_temp,
+    w.has_precipitation
+from `astrafy-assignment`.`chicago_taxi`.`filtered_trips` t
+left join weather_prepped w
+    on date(t.trip_start_timestamp) = w.weather_date;
+
+
+[0m17:36:01.128577 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:36:01.672411 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:41c17645-b960-4f6c-85d1-0a387eb9816e&page=queryresults
+[0m17:36:01.919679 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:41c17645-b960-4f6c-85d1-0a387eb9816e&page=queryresults
+[0m17:36:01.932182 [debug] [Thread-1 (]: Database Error in model join_model (models\join_model.sql)
+  No matching signature for function PARSE_DATE
+    Argument types: STRING, DATE
+    Signature: PARSE_DATE(STRING, STRING)
+      Argument 2: Unable to coerce type DATE to expected type STRING at [10:9]
+  compiled code at target\run\assignment\models\join_model.sql
+[0m17:36:01.932758 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9583472e-6a2a-4b34-b42a-0b138ece942c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B919C7F490>]}
+[0m17:36:01.933382 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model chicago_taxi.join_model ................... [[31mERROR[0m in 0.82s]
+[0m17:36:01.934324 [debug] [Thread-1 (]: Finished running node model.assignment.join_model
+[0m17:36:01.935151 [debug] [Thread-4 (]: Marking all children of 'model.assignment.join_model' to be skipped because of status 'error'.  Reason: Database Error in model join_model (models\join_model.sql)
+  No matching signature for function PARSE_DATE
+    Argument types: STRING, DATE
+    Signature: PARSE_DATE(STRING, STRING)
+      Argument 2: Unable to coerce type DATE to expected type STRING at [10:9]
+  compiled code at target\run\assignment\models\join_model.sql.
+[0m17:36:01.937644 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:36:01.938289 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:36:01.938609 [debug] [MainThread]: Connection 'list_astrafy-assignment' was properly closed.
+[0m17:36:01.938901 [debug] [MainThread]: Connection 'list_astrafy-assignment_chicago_taxi' was properly closed.
+[0m17:36:01.939185 [debug] [MainThread]: Connection 'model.assignment.join_model' was properly closed.
+[0m17:36:01.939552 [info ] [MainThread]: 
+[0m17:36:01.940114 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.24 seconds (3.24s).
+[0m17:36:01.941782 [debug] [MainThread]: Command end result
+[0m17:36:01.962851 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:36:01.965563 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:36:01.973060 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Claude\assignment\dbt\target\run_results.json
+[0m17:36:01.973562 [info ] [MainThread]: 
+[0m17:36:01.974258 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:36:01.975491 [info ] [MainThread]: 
+[0m17:36:01.976225 [error] [MainThread]:   Database Error in model join_model (models\join_model.sql)
+  No matching signature for function PARSE_DATE
+    Argument types: STRING, DATE
+    Signature: PARSE_DATE(STRING, STRING)
+      Argument 2: Unable to coerce type DATE to expected type STRING at [10:9]
+  compiled code at target\run\assignment\models\join_model.sql
+[0m17:36:01.977250 [info ] [MainThread]: 
+[0m17:36:01.978003 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m17:36:01.979609 [debug] [MainThread]: Command `dbt run` failed at 17:36:01.979478 after 10.26 seconds
+[0m17:36:01.979999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B91885BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B91A275640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B919D70950>]}
+[0m17:36:01.980369 [debug] [MainThread]: Flushing usage events
+[0m17:36:02.645360 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:38:17.812084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B713EDABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B714E53C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B71505FED0>]}
+
+
+============================== 17:38:17.817939 | f50cda99-197a-4384-bba5-787513bafcec ==============================
+[0m17:38:17.817939 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:38:17.818800 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:38:22.528198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7145715B0>]}
+[0m17:38:22.610158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B73097D6A0>]}
+[0m17:38:22.611020 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:38:23.815330 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m17:38:24.010815 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:38:24.011377 [debug] [MainThread]: Partial parsing: updated file: assignment://models\join_model.sql
+[0m17:38:24.312923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7309E5650>]}
+[0m17:38:24.374010 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:38:24.377027 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:38:24.417981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7308FFD40>]}
+[0m17:38:24.419009 [info ] [MainThread]: Found 2 models, 493 macros
+[0m17:38:24.419992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B731FCFAF0>]}
+[0m17:38:24.422069 [info ] [MainThread]: 
+[0m17:38:24.422692 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:38:24.423177 [info ] [MainThread]: 
+[0m17:38:24.423878 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:38:24.428388 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment'
+[0m17:38:24.428880 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:38:24.910336 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment_chicago_taxi'
+[0m17:38:24.910955 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:38:25.261488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B731DFD640>]}
+[0m17:38:25.263251 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:38:25.278667 [debug] [Thread-1 (]: Began running node model.assignment.filtered_trips
+[0m17:38:25.280978 [info ] [Thread-1 (]: 1 of 2 START sql view model chicago_taxi.filtered_trips ........................ [RUN]
+[0m17:38:25.284030 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.assignment.filtered_trips'
+[0m17:38:25.285067 [debug] [Thread-1 (]: Began compiling node model.assignment.filtered_trips
+[0m17:38:25.297035 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.filtered_trips"
+[0m17:38:25.299160 [debug] [Thread-1 (]: Began executing node model.assignment.filtered_trips
+[0m17:38:25.346740 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.filtered_trips"
+[0m17:38:25.348275 [debug] [Thread-1 (]: On model.assignment.filtered_trips: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.filtered_trips"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`
+  OPTIONS()
+  as -- models/filtered_trips.sql
+
+select *
+from `astrafy-assignment.chicago_taxi.taxi_trips`
+where trip_start_timestamp between '2023-06-01' and '2023-12-31';
+
+
+[0m17:38:25.348786 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:38:25.904812 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:36a3bad5-8bf1-413d-93a1-1ebb1c0946a5&page=queryresults
+[0m17:38:26.550377 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B732013F50>]}
+[0m17:38:26.551122 [info ] [Thread-1 (]: 1 of 2 OK created sql view model chicago_taxi.filtered_trips ................... [[32mCREATE VIEW (0 processed)[0m in 1.27s]
+[0m17:38:26.552184 [debug] [Thread-1 (]: Finished running node model.assignment.filtered_trips
+[0m17:38:26.553166 [debug] [Thread-1 (]: Began running node model.assignment.join_model
+[0m17:38:26.553662 [info ] [Thread-1 (]: 2 of 2 START sql view model chicago_taxi.join_model ............................ [RUN]
+[0m17:38:26.554392 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.assignment.filtered_trips, now model.assignment.join_model)
+[0m17:38:26.554743 [debug] [Thread-1 (]: Began compiling node model.assignment.join_model
+[0m17:38:26.557203 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.join_model"
+[0m17:38:26.558540 [debug] [Thread-1 (]: Began executing node model.assignment.join_model
+[0m17:38:26.561510 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.join_model"
+[0m17:38:26.562897 [debug] [Thread-1 (]: On model.assignment.join_model: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.join_model"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`join_model`
+  OPTIONS()
+  as -- models/enriched_trips.sql
+
+weather_prepped as (
+    select
+        DATE as weather_date,
+        (MAX_TEMPERATURE_C + MIN_TEMPERATURE_C) / 2 as avg_temp,
+        case when PRECIP_TOTAL_DAY_MM > 0 then true else false end as has_precipitation
+    from `astrafy-assignment.chicago_taxi.weather`
+)
+
+select
+    t.*,
+    w.avg_temp,
+    w.has_precipitation
+from `astrafy-assignment`.`chicago_taxi`.`filtered_trips` t
+left join weather_prepped w
+    on date(t.trip_start_timestamp) = w.weather_date;
+
+
+[0m17:38:26.563479 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:38:26.903767 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:fde0e76c-fc48-442b-abef-3aa1c323ce54&page=queryresults
+[0m17:38:26.904403 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:fde0e76c-fc48-442b-abef-3aa1c323ce54&page=queryresults
+[0m17:38:26.917083 [debug] [Thread-1 (]: Database Error in model join_model (models\join_model.sql)
+  Syntax error: Unexpected identifier "weather_prepped" at [8:1]
+  compiled code at target\run\assignment\models\join_model.sql
+[0m17:38:26.918025 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f50cda99-197a-4384-bba5-787513bafcec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B731E5F540>]}
+[0m17:38:26.918884 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model chicago_taxi.join_model ................... [[31mERROR[0m in 0.36s]
+[0m17:38:26.919975 [debug] [Thread-1 (]: Finished running node model.assignment.join_model
+[0m17:38:26.920730 [debug] [Thread-4 (]: Marking all children of 'model.assignment.join_model' to be skipped because of status 'error'.  Reason: Database Error in model join_model (models\join_model.sql)
+  Syntax error: Unexpected identifier "weather_prepped" at [8:1]
+  compiled code at target\run\assignment\models\join_model.sql.
+[0m17:38:26.923377 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:38:26.924043 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:38:26.924482 [debug] [MainThread]: Connection 'list_astrafy-assignment' was properly closed.
+[0m17:38:26.924863 [debug] [MainThread]: Connection 'list_astrafy-assignment_chicago_taxi' was properly closed.
+[0m17:38:26.925205 [debug] [MainThread]: Connection 'model.assignment.join_model' was properly closed.
+[0m17:38:26.925743 [info ] [MainThread]: 
+[0m17:38:26.926345 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 2.50 seconds (2.50s).
+[0m17:38:26.928182 [debug] [MainThread]: Command end result
+[0m17:38:26.955429 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:38:26.959231 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:38:26.967798 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Claude\assignment\dbt\target\run_results.json
+[0m17:38:26.968374 [info ] [MainThread]: 
+[0m17:38:26.969290 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:38:26.970389 [info ] [MainThread]: 
+[0m17:38:26.971471 [error] [MainThread]:   Database Error in model join_model (models\join_model.sql)
+  Syntax error: Unexpected identifier "weather_prepped" at [8:1]
+  compiled code at target\run\assignment\models\join_model.sql
+[0m17:38:26.972752 [info ] [MainThread]: 
+[0m17:38:26.973414 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m17:38:26.975796 [debug] [MainThread]: Command `dbt run` failed at 17:38:26.975628 after 9.38 seconds
+[0m17:38:26.976255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B730A1F390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B732451880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B731FBF8D0>]}
+[0m17:38:26.976705 [debug] [MainThread]: Flushing usage events
+[0m17:38:27.387812 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:40:50.984499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EA686ABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EA77E3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EA79EFED0>]}
+
+
+============================== 17:40:50.990186 | 995bbf6a-2dd7-40f6-a3c9-8aa0397e2565 ==============================
+[0m17:40:50.990186 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:40:50.991193 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:40:55.617816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EA6F055B0>]}
+[0m17:40:55.696544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC331D6A0>]}
+[0m17:40:55.697429 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:40:56.711016 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m17:40:56.907869 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:40:56.908431 [debug] [MainThread]: Partial parsing: updated file: assignment://models\join_model.sql
+[0m17:40:57.152634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC3385650>]}
+[0m17:40:57.207815 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:40:57.210868 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:40:57.249947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC329FD40>]}
+[0m17:40:57.250608 [info ] [MainThread]: Found 2 models, 493 macros
+[0m17:40:57.251177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC4973230>]}
+[0m17:40:57.253051 [info ] [MainThread]: 
+[0m17:40:57.253608 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:40:57.254191 [info ] [MainThread]: 
+[0m17:40:57.254928 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:40:57.259038 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment'
+[0m17:40:57.259479 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:40:57.791351 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment_chicago_taxi'
+[0m17:40:57.792808 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:40:58.105021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC479D570>]}
+[0m17:40:58.106790 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:40:58.113768 [debug] [Thread-1 (]: Began running node model.assignment.filtered_trips
+[0m17:40:58.114326 [info ] [Thread-1 (]: 1 of 2 START sql view model chicago_taxi.filtered_trips ........................ [RUN]
+[0m17:40:58.115170 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.assignment.filtered_trips'
+[0m17:40:58.115556 [debug] [Thread-1 (]: Began compiling node model.assignment.filtered_trips
+[0m17:40:58.122371 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.filtered_trips"
+[0m17:40:58.123830 [debug] [Thread-1 (]: Began executing node model.assignment.filtered_trips
+[0m17:40:58.155190 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.filtered_trips"
+[0m17:40:58.156886 [debug] [Thread-1 (]: On model.assignment.filtered_trips: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.filtered_trips"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`
+  OPTIONS()
+  as -- models/filtered_trips.sql
+
+select *
+from `astrafy-assignment.chicago_taxi.taxi_trips`
+where trip_start_timestamp between '2023-06-01' and '2023-12-31';
+
+
+[0m17:40:58.157556 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:40:58.794862 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:d3b1c8bd-4a92-474c-b1ad-8f96fa995243&page=queryresults
+[0m17:40:59.426028 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC47FFF50>]}
+[0m17:40:59.427017 [info ] [Thread-1 (]: 1 of 2 OK created sql view model chicago_taxi.filtered_trips ................... [[32mCREATE VIEW (0 processed)[0m in 1.31s]
+[0m17:40:59.428286 [debug] [Thread-1 (]: Finished running node model.assignment.filtered_trips
+[0m17:40:59.429038 [debug] [Thread-1 (]: Began running node model.assignment.join_model
+[0m17:40:59.430314 [info ] [Thread-1 (]: 2 of 2 START sql view model chicago_taxi.join_model ............................ [RUN]
+[0m17:40:59.431370 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.assignment.filtered_trips, now model.assignment.join_model)
+[0m17:40:59.432011 [debug] [Thread-1 (]: Began compiling node model.assignment.join_model
+[0m17:40:59.434553 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.join_model"
+[0m17:40:59.436124 [debug] [Thread-1 (]: Began executing node model.assignment.join_model
+[0m17:40:59.439526 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.join_model"
+[0m17:40:59.441011 [debug] [Thread-1 (]: On model.assignment.join_model: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.join_model"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`join_model`
+  OPTIONS()
+  as with filtered_trips as (
+    select *
+    from `astrafy-assignment.chicago_taxi.filtered_trips`
+),
+
+weather_prepped as (
+    select
+        DATE as weather_date,
+        (MAX_TEMPERATURE_C + MIN_TEMPERATURE_C) / 2 as avg_temp,
+        case when PRECIP_TOTAL_DAY_MM > 0 then true else false end as has_precipitation
+    from `astrafy-assignment.chicago_taxi.weather`
+)
+
+select
+    t.*,
+    w.avg_temp,
+    w.has_precipitation
+from filtered_trips t
+left join weather_prepped w
+    on date(t.trip_start_timestamp) = w.weather_date;
+
+
+[0m17:40:59.441605 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:41:00.078220 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:139f0aa6-6af1-40cf-9557-77a1a92ef882&page=queryresults
+[0m17:41:00.833054 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '995bbf6a-2dd7-40f6-a3c9-8aa0397e2565', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC376DFF0>]}
+[0m17:41:00.835435 [info ] [Thread-1 (]: 2 of 2 OK created sql view model chicago_taxi.join_model ....................... [[32mCREATE VIEW (0 processed)[0m in 1.40s]
+[0m17:41:00.838756 [debug] [Thread-1 (]: Finished running node model.assignment.join_model
+[0m17:41:00.843521 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:41:00.845665 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:41:00.846915 [debug] [MainThread]: Connection 'list_astrafy-assignment' was properly closed.
+[0m17:41:00.848144 [debug] [MainThread]: Connection 'list_astrafy-assignment_chicago_taxi' was properly closed.
+[0m17:41:00.849295 [debug] [MainThread]: Connection 'model.assignment.join_model' was properly closed.
+[0m17:41:00.850313 [info ] [MainThread]: 
+[0m17:41:00.851678 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.60 seconds (3.60s).
+[0m17:41:00.854509 [debug] [MainThread]: Command end result
+[0m17:41:00.877462 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m17:41:00.880604 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m17:41:00.888831 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Claude\assignment\dbt\target\run_results.json
+[0m17:41:00.889483 [info ] [MainThread]: 
+[0m17:41:00.890365 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:41:00.891553 [info ] [MainThread]: 
+[0m17:41:00.892281 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m17:41:00.894414 [debug] [MainThread]: Command `dbt run` succeeded at 17:41:00.894251 after 10.17 seconds
+[0m17:41:00.894850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC33BDE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC4AAE9F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028EC34507D0>]}
+[0m17:41:00.895219 [debug] [MainThread]: Flushing usage events
+[0m17:41:01.347824 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:30:36.434378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0E88ABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0F803C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0FA0FED0>]}
+
+
+============================== 18:30:36.450498 | 7d6b962e-3fb4-40da-bae4-66e94439d0de ==============================
+[0m18:30:36.450498 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:30:36.451465 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:30:46.939011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0EF2D5B0>]}
+[0m18:30:47.003309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2B3AD6A0>]}
+[0m18:30:47.004073 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m18:30:48.316868 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m18:30:51.887482 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:30:51.888090 [debug] [MainThread]: Partial parsing: updated file: assignment://models\join_model.sql
+[0m18:30:52.151586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2B415650>]}
+[0m18:30:52.219126 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m18:30:52.223443 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m18:30:52.336485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2B43B980>]}
+[0m18:30:52.337094 [info ] [MainThread]: Found 2 models, 493 macros
+[0m18:30:52.337841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2CA03310>]}
+[0m18:30:52.341791 [info ] [MainThread]: 
+[0m18:30:52.342572 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:30:52.343503 [info ] [MainThread]: 
+[0m18:30:52.344623 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:30:52.349505 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment'
+[0m18:30:52.350057 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:30:52.991615 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment_chicago_taxi'
+[0m18:30:52.992189 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:30:53.302358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2CA88120>]}
+[0m18:30:53.302946 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:30:53.315679 [debug] [Thread-1 (]: Began running node model.assignment.filtered_trips
+[0m18:30:53.316403 [info ] [Thread-1 (]: 1 of 2 START sql view model chicago_taxi.filtered_trips ........................ [RUN]
+[0m18:30:53.317455 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.assignment.filtered_trips'
+[0m18:30:53.317952 [debug] [Thread-1 (]: Began compiling node model.assignment.filtered_trips
+[0m18:30:53.326280 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.filtered_trips"
+[0m18:30:53.328230 [debug] [Thread-1 (]: Began executing node model.assignment.filtered_trips
+[0m18:30:53.362424 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.filtered_trips"
+[0m18:30:53.365117 [debug] [Thread-1 (]: On model.assignment.filtered_trips: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.filtered_trips"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`
+  OPTIONS()
+  as -- models/filtered_trips.sql
+
+select *
+from `astrafy-assignment.chicago_taxi.taxi_trips`
+where trip_start_timestamp between '2023-06-01' and '2023-12-31';
+
+
+[0m18:30:53.365744 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:30:53.962878 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:ef1fd74f-7ccc-4705-918e-d07ccf04cb57&page=queryresults
+[0m18:30:54.770157 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2C88FDD0>]}
+[0m18:30:54.770896 [info ] [Thread-1 (]: 1 of 2 OK created sql view model chicago_taxi.filtered_trips ................... [[32mCREATE VIEW (0 processed)[0m in 1.45s]
+[0m18:30:54.771958 [debug] [Thread-1 (]: Finished running node model.assignment.filtered_trips
+[0m18:30:54.772545 [debug] [Thread-1 (]: Began running node model.assignment.join_model
+[0m18:30:54.773273 [info ] [Thread-1 (]: 2 of 2 START sql view model chicago_taxi.join_model ............................ [RUN]
+[0m18:30:54.774105 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.assignment.filtered_trips, now model.assignment.join_model)
+[0m18:30:54.774613 [debug] [Thread-1 (]: Began compiling node model.assignment.join_model
+[0m18:30:54.776229 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.join_model"
+[0m18:30:54.777904 [debug] [Thread-1 (]: Began executing node model.assignment.join_model
+[0m18:30:54.780843 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.join_model"
+[0m18:30:54.782495 [debug] [Thread-1 (]: On model.assignment.join_model: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.join_model"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`join_model`
+  OPTIONS()
+  as with filtered_trips as (
+    select *
+    from `astrafy-assignment.chicago_taxi.filtered_trips`
+),
+
+weather_prepped as (
+    select
+        DATE as weather_date,
+        (MAX_TEMPERATURE_C + MIN_TEMPERATURE_C) / 2 as avg_temp,
+        case when PRECIP_TOTAL_DAY_MM > 0 then true else false end as has_precipitation
+    from `astrafy-assignment.chicago_taxi.weather`
+)
+
+select
+    GENERATE_UUID() as trip_id,
+    t.*,
+    w.avg_temp,
+    w.has_precipitation
+from filtered_trips t
+left join weather_prepped w
+    on date(t.trip_start_timestamp) = w.weather_date;
+
+
+[0m18:30:54.783106 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:30:55.420532 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:8abc61fb-ef9d-4b48-bc05-16c0c0e90a19&page=queryresults
+[0m18:30:56.124584 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7d6b962e-3fb4-40da-bae4-66e94439d0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2B803490>]}
+[0m18:30:56.125265 [info ] [Thread-1 (]: 2 of 2 OK created sql view model chicago_taxi.join_model ....................... [[32mCREATE VIEW (0 processed)[0m in 1.35s]
+[0m18:30:56.126309 [debug] [Thread-1 (]: Finished running node model.assignment.join_model
+[0m18:30:56.127998 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:30:56.128649 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:30:56.128962 [debug] [MainThread]: Connection 'list_astrafy-assignment' was properly closed.
+[0m18:30:56.129263 [debug] [MainThread]: Connection 'list_astrafy-assignment_chicago_taxi' was properly closed.
+[0m18:30:56.129550 [debug] [MainThread]: Connection 'model.assignment.join_model' was properly closed.
+[0m18:30:56.129912 [info ] [MainThread]: 
+[0m18:30:56.130400 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.79 seconds (3.79s).
+[0m18:30:56.131596 [debug] [MainThread]: Command end result
+[0m18:30:56.160067 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m18:30:56.162852 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m18:30:56.170092 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Claude\assignment\dbt\target\run_results.json
+[0m18:30:56.170562 [info ] [MainThread]: 
+[0m18:30:56.171303 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:30:56.172529 [info ] [MainThread]: 
+[0m18:30:56.173268 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m18:30:56.175310 [debug] [MainThread]: Command `dbt run` succeeded at 18:30:56.175138 after 20.17 seconds
+[0m18:30:56.175716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2B44BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2CB37AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2CA104D0>]}
+[0m18:30:56.176090 [debug] [MainThread]: Flushing usage events
+[0m18:30:56.585324 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:34:27.233533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D2686BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D3613C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D381FED0>]}
+
+
+============================== 18:34:27.238695 | b3418cd4-842f-4fda-bdb2-9efd3eea2a3d ==============================
+[0m18:34:27.238695 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:34:27.239465 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Claude\\assignment\\dbt', 'log_path': 'C:\\Users\\Claude\\assignment\\dbt\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:34:32.468702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D2D355B0>]}
+[0m18:34:32.548056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256EF13D6A0>]}
+[0m18:34:32.549090 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m18:34:33.760205 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m18:34:34.232886 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:34:34.233521 [debug] [MainThread]: Partial parsing: updated file: assignment://models\join_model.sql
+[0m18:34:34.571924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256EF1A5650>]}
+[0m18:34:34.636000 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m18:34:34.639241 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m18:34:34.681179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256EF1CB980>]}
+[0m18:34:34.681698 [info ] [MainThread]: Found 2 models, 493 macros
+[0m18:34:34.682285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256F0797310>]}
+[0m18:34:34.684251 [info ] [MainThread]: 
+[0m18:34:34.684781 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:34:34.685274 [info ] [MainThread]: 
+[0m18:34:34.685932 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:34:34.691273 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment'
+[0m18:34:34.691847 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:34:35.261373 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_astrafy-assignment_chicago_taxi'
+[0m18:34:35.262117 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:34:35.546361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256F0818120>]}
+[0m18:34:35.546911 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:34:35.551955 [debug] [Thread-1 (]: Began running node model.assignment.filtered_trips
+[0m18:34:35.552551 [info ] [Thread-1 (]: 1 of 2 START sql view model chicago_taxi.filtered_trips ........................ [RUN]
+[0m18:34:35.553389 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.assignment.filtered_trips'
+[0m18:34:35.553810 [debug] [Thread-1 (]: Began compiling node model.assignment.filtered_trips
+[0m18:34:35.560660 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.filtered_trips"
+[0m18:34:35.562745 [debug] [Thread-1 (]: Began executing node model.assignment.filtered_trips
+[0m18:34:35.596621 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.filtered_trips"
+[0m18:34:35.598603 [debug] [Thread-1 (]: On model.assignment.filtered_trips: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.filtered_trips"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`filtered_trips`
+  OPTIONS()
+  as -- models/filtered_trips.sql
+
+select *
+from `astrafy-assignment.chicago_taxi.taxi_trips`
+where trip_start_timestamp between '2023-06-01' and '2023-12-31';
+
+
+[0m18:34:35.599130 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:34:36.069381 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:00572edf-54af-46f8-84b0-53370287e343&page=queryresults
+[0m18:34:36.869143 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256F061FDD0>]}
+[0m18:34:36.870122 [info ] [Thread-1 (]: 1 of 2 OK created sql view model chicago_taxi.filtered_trips ................... [[32mCREATE VIEW (0 processed)[0m in 1.31s]
+[0m18:34:36.907219 [debug] [Thread-1 (]: Finished running node model.assignment.filtered_trips
+[0m18:34:36.907963 [debug] [Thread-1 (]: Began running node model.assignment.join_model
+[0m18:34:36.909380 [info ] [Thread-1 (]: 2 of 2 START sql view model chicago_taxi.join_model ............................ [RUN]
+[0m18:34:36.910980 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.assignment.filtered_trips, now model.assignment.join_model)
+[0m18:34:36.911720 [debug] [Thread-1 (]: Began compiling node model.assignment.join_model
+[0m18:34:36.913737 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment.join_model"
+[0m18:34:36.915188 [debug] [Thread-1 (]: Began executing node model.assignment.join_model
+[0m18:34:36.918301 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment.join_model"
+[0m18:34:36.919764 [debug] [Thread-1 (]: On model.assignment.join_model: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "assignment_profile", "target_name": "dev", "node_id": "model.assignment.join_model"} */
+
+
+  create or replace view `astrafy-assignment`.`chicago_taxi`.`join_model`
+  OPTIONS()
+  as with filtered_trips as (
+    select *
+    from `astrafy-assignment.chicago_taxi.filtered_trips`
+),
+
+weather_prepped as (
+    select
+        DATE as weather_date,
+        (MAX_TEMPERATURE_C + MIN_TEMPERATURE_C) / 2 as avg_temp,
+        case when PRECIP_TOTAL_DAY_MM > 0 then true else false end as has_precipitation
+    from `astrafy-assignment.chicago_taxi.weather`
+)
+
+select
+    t.*,
+    w.avg_temp,
+    w.has_precipitation
+from filtered_trips t
+left join weather_prepped w
+    on date(t.trip_start_timestamp) = w.weather_date;
+
+
+[0m18:34:36.920299 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:34:37.550085 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=astrafy-assignment&j=bq:US:cc5a4752-c8a7-492f-b074-18d3a3464918&page=queryresults
+[0m18:34:38.223611 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b3418cd4-842f-4fda-bdb2-9efd3eea2a3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256F07F3490>]}
+[0m18:34:38.224483 [info ] [Thread-1 (]: 2 of 2 OK created sql view model chicago_taxi.join_model ....................... [[32mCREATE VIEW (0 processed)[0m in 1.31s]
+[0m18:34:38.225799 [debug] [Thread-1 (]: Finished running node model.assignment.join_model
+[0m18:34:38.228878 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:34:38.229780 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:34:38.230205 [debug] [MainThread]: Connection 'list_astrafy-assignment' was properly closed.
+[0m18:34:38.230564 [debug] [MainThread]: Connection 'list_astrafy-assignment_chicago_taxi' was properly closed.
+[0m18:34:38.230863 [debug] [MainThread]: Connection 'model.assignment.join_model' was properly closed.
+[0m18:34:38.231324 [info ] [MainThread]: 
+[0m18:34:38.232359 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.55 seconds (3.55s).
+[0m18:34:38.234914 [debug] [MainThread]: Command end result
+[0m18:34:38.262175 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Claude\assignment\dbt\target\manifest.json
+[0m18:34:38.265831 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Claude\assignment\dbt\target\semantic_manifest.json
+[0m18:34:38.274593 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Claude\assignment\dbt\target\run_results.json
+[0m18:34:38.275095 [info ] [MainThread]: 
+[0m18:34:38.275767 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:34:38.278498 [info ] [MainThread]: 
+[0m18:34:38.279758 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m18:34:38.281950 [debug] [MainThread]: Command `dbt run` succeeded at 18:34:38.281729 after 11.42 seconds
+[0m18:34:38.282435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256EF1DBE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256F08CFAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256F07A04D0>]}
+[0m18:34:38.282983 [debug] [MainThread]: Flushing usage events
+[0m18:34:38.719439 [debug] [MainThread]: An error was encountered while trying to flush usage events

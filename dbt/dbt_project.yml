@@ -1,0 +1,11 @@
+name: assignment
+version: '1.0'
+config-version: 2
+
+profile: assignment_profile
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
