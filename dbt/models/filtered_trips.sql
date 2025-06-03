@@ -1,20 +1,5 @@
-with filtered_trips as (
-    select *
-    from `astrafy-assignment.chicago_taxi.filtered_trips`
-),
+-- models/filtered_trips.sql
 
-weather_prepped as (
-    select
-        parse_date('%Y-%m-%d', DATE) as weather_date,
-        (MAX_TEMPERATURE_C + MIN_TEMPERATURE_C) / 2 as avg_temp,
-        case when PRECIP_TOTAL_DAY_MM > 0 then true else false end as has_precipitation
-    from `astrafy-assignment.chicago_taxi.weather`
-)
-
-select
-    t.*,
-    w.avg_temp,
-    w.has_precipitation
-from filtered_trips t
-left join weather_prepped w
-    on date(t.trip_start_timestamp) = w.weather_date
+select *
+from `astrafy-assignment.chicago_taxi.taxi_trips`
+where trip_start_timestamp between '2023-06-01' and '2023-12-31'
