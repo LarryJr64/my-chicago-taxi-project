@@ -4,6 +4,9 @@
 
 This project analyzes Chicago taxi trip data from BigQuery to explore the relationship between weather conditions and trip duration. The goal is to build a Looker Studio dashboard that visualizes this relationship, based on the hypothesis that weather affects trip duration. This project uses dbt for data transformation and Terraform for infrastructure provisioning on Google Cloud.
 
+## Link to Looker Studio
+https://lookerstudio.google.com/s/gcO0zE9qd_o
+
 ## Deliverables
 
 *   GitHub repository containing code (Terraform, dbt, and potentially scripts for data ingestion).
