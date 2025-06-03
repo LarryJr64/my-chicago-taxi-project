@@ -9,10 +9,6 @@ This project analyzes Chicago taxi trip data from BigQuery to explore the relati
 *   GitHub repository containing code (Terraform, dbt, and potentially scripts for data ingestion).
 *   Looker Studio dashboard visualizing the relationship between weather and taxi trip duration.
 
-## Project Structure
-. ├── README.md # This file ├── credentials/ # Credentials (git ignored) │ └── dbt-service-account.json ├── dashboard/ # Looker Studio dashboard (placeholder) │ └── .gitkeep ├── dbt/ # dbt project │ ├── dbt_project.yml # dbt project configuration │ ├── profiles.yml # dbt profiles configuration │ ├── models/ # dbt models │ │ ├── filtered_trips.sql # SQL model to filter trips │ │ └── join_model.sql # SQL model to join trips and weather data │ └── logs/ # dbt logs (git ignored) ├── logs/ # General logs (git ignored) ├── scripts/ # Scripts (placeholder) │ └── .gitkeep ├── terraform/ # Terraform configuration │ ├── main.tf # Main Terraform file │ ├── variables.tf # Terraform variables │ ├── terraform.tfvars # Terraform variables (git ignored) │ └── credentials/ # Credentials for Terraform (git ignored) └── .gitignore # Git ignore file
-
-
 ## dbt Configuration
 
 *   [`dbt_project.yml`](dbt/dbt_project.yml): Defines the dbt project, including the profile, model paths, and target path.
